@@ -4,32 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CARIT Page 3</title>
+    <title>CARIT Home</title>
     <link rel="stylesheet" href="./style.css">
   </head>
 
+<!--
+	 This page2.html, about us, for the CARIT website. The body has a 2% margin. The header is 
+	centered with the KSU logo and website title. The KSU logo links to the KSU website. The title is 
+	appropriately <h1>. The navigation bar spans across the page with a 100% width. It is an unordered 
+	list with the text centered, and the color of each link changes on hover. The footer has a relative 
+	position to keep it at the bottom of the page. This is consistent on each page. 
+
+	 In the body, there is a title followed by a table, which displays KSU events. The table contains a
+	 header and four table rows with four pieces of table data in each. The table has a box shadow. One
+	 column of the table has hyperlinks. The table is formatted in the CSS stylesheet. 
+
+-->
+
+
+
 	<header>
-		<img src="header.jpg">
+		<a href="https://ccse.kennesaw.edu/it/">
+		<img class="centered" src="img/ksulogo.png">
+	</a>
+		<h1 class="center">Center for Applied Research in Information Technology</h1>
 	<div class="nav">
 	<ul>
-		<li> <a href="index.html">Home</a></li>
-		<li> <a href="page2.html">Page 2</a></li>
-		<li> <a href="page3.html">Page 3</a></li>
+		<li class="navBorder"> <a href="page2.html">About Us</a></li>
+		<li class="navBorder" id="home"> <a href="index.html">Home</a></li>
+		<li class="active"> <a href="page3.html">Resources</a></li>
 	</ul>
 </div>
 	</header>
 	
 	
-
+<br>
   <body>
+	<h1 class="center" id="event">University Events</h1>
+	<section class="resources">
+		<table>
+			<tr>
+			  <th>Event Title</th>
+			  <th>Location</th>
+			  <th>Date</th>
+			  <th>About</th>
+			</tr>
+			<tr>
+			  <td><a href="https://calendar.kennesaw.edu/event/she_kills_monsters">SHE KILLS MONSTERS</td></a>
+			  <td>Stillwell Theater</td>
+			  <td class="center">Sun, Oct 16, 2022<br>3pm to 4pm</td>
+			  <td>After losing her family in a car crash, Agnes Evans returns to her hometown hoping to learn more about her late sister, Tilly. She’s shocked when she learns about her sister’s butt-kicking 
+				Dungeons and Dragons adventures as Tillius the Paladin. Agnes joins Tilly’s game, fights demons, dragons, and maniacal cheerleaders, and discovers the thrill of finding self, connecting with family, and “making the saving throw.”</td>
+			</tr>
+			<tr>
+			  <td><a href="https://calendar.kennesaw.edu/event/writers_and_warlocks_5175">Writers and Warlocks</td></a>
+			  <td>Lawrence V. Johnson Library , 101</td>
+			  <td class="center">Mon, October 17, 2022<br>5pm to 8pm</td>
+			  <td>Want to become a Dungeon Master and write your own sessions? The KSU Writing Center’s “Writers and Warlocks” has your back! Join us in  Johnson Library 101 (Marietta campus) on to learn tips and tricks to writing your own DnD one-shot session. We will be meeting from 5:00-6:00 p.m. See you then! </td>
+			</tr>
+			<tr>
+				<td><a href="https://calendar.kennesaw.edu/event/2022_fall_job_and_internship_fair_all_majors">2022 Fall Job and Internship Fair (All Majors)</td></a>
+				<td>Siegel Student Recreation & Activities Center</td>
+				<td class="center">Tue, October 18, 2022<br>11am to 3pm</td>
+				<td>Each Fall & Spring semester, we invite many of the nation's top companies to the Kennesaw campus in order to showcase KSU's brightest students and alumni for internship, co-op, full-time, & part-time positions.</td>
+			  </tr>
+			<tr>
+				<td><a href="https://calendar.kennesaw.edu/event/the_10th_annual_coming-out_monologues">The 10th Annual Coming-Out Monologues</td></a>
+				<td>Onyx Theater</td>
+				<td class="center">Thu, October 20, 2022<br>7:30pm to 8:30pm</td>
+				<td>With great Pride, TPS celebrates our tenth anniversary performance of coming-out stories written by KSU and metro-area communities and performed by KSU students.</td>
+			  </tr>
+			
+		  </table>
 
-	<section class="descript">
-		<h1 class="center">Center for Applied Research in Information Technology (CARIT) website.</h1>
-		<p> 
-			table shit
-    	</p>
+
 
 	</section>
+	
+
 
 
 
@@ -38,6 +90,9 @@
   </body>
 	
 	<footer>
-	http://it5443.azurewebsites.net
-	</footer>
+		<p>Created by Halley Gissendanner for IT 3203</p>
+		<h3>
+	Class project website: <a href="http://it5443.azurewebsites.net">http://it5443.azurewebsites.net</a>
+	</h3>	
+</footer>
 </html>

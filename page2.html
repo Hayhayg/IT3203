@@ -7,14 +7,32 @@
     <title>Page 2</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+
+  <!--
+    This is page2.html, about us, for the CARIT website. The body has a 2% margin. The header is 
+	centered with the KSU logo and website title. The title is appropriately <h1>. 
+	The navigation bar spans across the page with a 100% width, text centered, the color of each 
+	link changes on hover. The footer has a relative position to keep it at the bottom of the page. 
+  The body contains a flexbox with three items in the flex containter. The flex boxes are center
+  aligned. Each one contains an image, text, and a hyperlink. The boxes are equal in size.  
+
+
+  -->
+
+
+
+
   <body>
     <header>
-      <img src="header.jpg">
+      <a href="https://ccse.kennesaw.edu/it/">
+      <img class="centered" src="img/ksulogo.png">
+    </a>
+      <h1 class="center">Center for Applied Research in Information Technology</h1>
     <div class="nav">
     <ul>
-      <li> <a href="index.html">Home</a></li>
-      <li> <a href="page2.html">Page 2</a></li>
-      <li> <a href="page3.html">Page 3</a></li>
+      <li class="navBorder active"> <a href="page2.html">About Us</a></li>
+      <li class="navBorder" id="home"> <a href="index.html">Home</a></li>
+      <li> <a href="page3.html">Resources</a></li>
     </ul>
   </div>
     </header>
@@ -22,11 +40,11 @@
     </main>
 
     <section class="about">
-      <h1>About us</h1>
-      <h2 class="center">Faculty Members</h2>
+    <br>
+      <h1 class="center">Faculty Members</h1>
       <div class="flex-container squared">
         <div>
-          <img src="faculty1.png">
+          <img src="img/faculty1.png">
           <h3>Linh Le</h3>
           <p>
       Position:
@@ -46,7 +64,7 @@
         
         </div>
         <div>
-          <img src="faculty2.png">		<h3>Svetlana Peltsverger</h3>
+          <img src="img/faculty2.png">		<h3>Svetlana Peltsverger</h3>
           <p>
       Position:
       Associate Dean of the College of Computing and Software Engineering
@@ -64,7 +82,7 @@
         </div>
         
         <div>
-          <img src="faculty3.png">		<h3>Dawn Tatum</h3>
+          <img src="img/faculty3.png">		<h3>Dawn Tatum</h3>
           <p>
       Position:
       Senior Lecturer
@@ -85,8 +103,14 @@
       </div>
       
       </table>
-      
       </section>
+
+      <footer>
+        <p>Created by Halley Gissendanner for IT 3203</p>
+        <h3>
+      Class project website: <a href="http://it5443.azurewebsites.net">http://it5443.azurewebsites.net</a>
+      </h3>	
+    </footer>
 	<script src="index.js"></script>
   </body>
 </html>

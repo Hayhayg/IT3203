@@ -8,23 +8,39 @@
     <link rel="stylesheet" href="./style.css">
   </head>
 
+
+  <!--
+	This is the index.html, home, page for the CARIT website. The body has a 2% margin. The header is 
+	centered with the KSU logo and website title. The title is appropriately <h1>. 
+	The navigation bar spans across the page with a 100% width, text centered, the color of each 
+	link changes on hover. The footer has a relative position to keep it at the bottom of the page. 
+	The body of the page contains the website's description in a <p> that has a 30px padding on all
+	sides except the top, which has a 10px padding. The 'Recent News' section is an ordered list with 
+	HREF links and altered link characteristics. On hover, it is KSU's yellow.
+
+  -->
+
+
 	<header>
-		<img src="header.jpg">
+		<a href="https://ccse.kennesaw.edu/it/">
+		<img class="centered" src="img/ksulogo.png">
+	</a>
+		<h1 class="center">Center for Applied Research in Information Technology</h1>
 	<div class="nav">
 	<ul>
-		<li> <a href="index.html">Home</a></li>
-		<li> <a href="page2.html">Page 2</a></li>
-		<li> <a href="page3.html">Page 3</a></li>
+		<li class="navBorder"> <a href="page2.html">About Us</a></li>
+		<li class="navBorder active" id="home"> <a href="index.html">Home</a></li>
+		<li> <a href="page3.html">Resources</a></li>
 	</ul>
 </div>
 	</header>
 	
 	
-
+<br>
   <body>
-
+	
 	<section class="descript">
-		<h2 class="center">Welcome to the Center for Applied Research in Information Technology (CARIT) website.</h2>
+		<h1 class="center">Welcome to the CARIT website.</h1>
 		<p> 
 			The CARIT is an interdisciplinary research center that provides high quality survey research, program evaluation, performance measurement, and experimental research using scientifically rigorous information technology methods. 
 			Our goal is to collaborate with other disciplines to find new opportunities to apply computing in new ways to solve today’s most challenging problems. The CARIT is a valuable resource for faculty in need of assistance for research projects, grants, and contracts. 
@@ -39,12 +55,17 @@
 
 
 <section class="news">
-<h1>News</h1>
+<h2>Recent News</h2>
 <ol>
-	<li>Article 1 </li>
-	<li>Article 2</li>
-	<li>Article 3</li>
-</ol>
+	
+	<li><a href="https://www.forbes.com/sites/billybambrough/2022/10/16/a-28-trillion-opportunity-crypto-braced-for-a-huge-earthquake-as-the-price-of-bitcoin-ethereum-bnb-
+		xrp-solana-cardano-and-dogecoin-swing/?sh=2468d3a0ea49">A $28 Trillion Opportunity - Crypto braced for a huge earthquake</a></li>
+	<li><a href="https://venturebeat.com/ai/we-are-entering-a-new-era-for-ai-powered-robotics/">We are entering a new era for AI-powered robotics</a></li>
+	<li><a href="https://www.theverge.com/2022/10/16/23405739/microsoft-out-of-date-driver-list-windows-pcs-malware-attacks-years-byovd">Microsoft’s out-of-date driver list left Windows PCs open to malware attacks for years</a></li>
+	<li><a href="https://economictimes.indiatimes.com/tech/technology/metaverse-emerging-as-a-fast-developing-technology-sector/articleshow/94865535.cms">Metaverse emerging as a fast-developing technology Sector</a></li>
+
+
+	</ol>
 
 </section>
 
@@ -52,6 +73,9 @@
   </body>
 	
 	<footer>
-	http://it5443.azurewebsites.net
-	</footer>
+		<p>Created by Halley Gissendanner for IT 3203</p>
+		<h3>
+	Class project website: <a href="http://it5443.azurewebsites.net">http://it5443.azurewebsites.net</a>
+	</h3>	
+</footer>
 </html>

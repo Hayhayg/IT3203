@@ -1,63 +1,90 @@
-/*
-
-#A1A0A0 grey
-#7A8591 blue grey
-RGB 122, 133, 145
-#36918B bright blue
-RGB 54, 145, 139
-#8F897F wet concrete
-#445749 emboldened green
-
-
-*/
 
 
 body{
-	background-color: rgba(15, 136, 163, 0.418);
+	background-color: rgba(112, 183, 201, 0.418);
+	margin: 2%;
 	
 }
+a{
+	color: black;
+}
+a:visited{
+	color: rgb(106, 34, 148);
+}
+a:link{
+	color: rgb(0, 0, 0);
+}
+a:hover{
+	color: rgb(251, 189, 21);
+}
+
 
 
 h1 { font-family: "Dejavu Sans"; font-size: 24px; font-style: normal; font-variant: normal; font-weight: bold; line-height: 26px; } 
 h2 { font-family: "Dejavu Sans"; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: 20px; } 
 h3 { font-family: "Dejavu Sans"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: bold; line-height: 15px; } 
 p { font-family: "Dejavu Sans"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } 
-blockquote { font-family: "Dejavu Sans"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } 
-pre { font-family: "Dejavu Sans"; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18px; }
 
-
-
-
-.nav{
-	list-style-type: none;
+.centered{
+	display: block;
 	margin: 0 auto;
-	padding: 0;
-	overflow: hidden; 
-	background-color: rbga(77,230,200,.58);
+}
+
+header img{
+	max-height: 10vh;
+}
+header h1{
+	font-size: 2.2em;
+	line-height: normal;
+
+}
+
+.nav ul{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 8px;
+	overflow: hidden;
+	background-color: rgb(50, 118, 134);
+	box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.288);
 	
+
 }
 .nav li{
-float: left;
-padding: 10px;
-font-size: 1em;
-border: solid 1px rgb(0, 0, 0);
-list-style-type: none;
-background-color: rgb(255, 255, 255);
-color: black;
-}
-	
-.nav li a{
-	text-decoration: none;
-	font-weight: bold;
-	display: box;
-	padding-left: 10px;
-	padding-right: 10px;
+	display: inline-block;
+	text-align: center;
+	font-weight: 400;
+	font-size: 1.1em;
 
 }
-a:hover{
-	background-color: rgba(172, 172, 172, 0.99);
+
+.nav a{
+	display: block;
+	color: white;
+	padding: 8px 35px 8px 30px;
+
+}
+#home{
+	font-size: 1.5em;
+	font-weight: 500;
+	border-right: 2px solid white;
+	border-left: 2px solid white;
+	
+
+}
+
+.nav a:hover{
+	background-color: rgb(251, 189, 21);
+	color: rgb(136, 40, 40);
+	text-decoration: none;
 	
 }
+a:link{
+	text-decoration: none;
+}
+
 
 .flex-container{
 	display: flex;
@@ -76,19 +103,91 @@ a:hover{
 }
 .flex-container img{
 object-fit:cover;
-width:100px;
-  height: 100px;
- 
   background-size:cover;
   background-position:center;
 	
 }
+
+.about{
+	padding-bottom: 10px;
+}
+.descript{
+	padding: 30px;
+	padding-top: 10px;
+}
 .squared img{
 	background: 50% 50%;
-	width: 24.5vw;
+	width: 23.5vw;
 	height: 24.5vw;
+
 }
 
 .center{
 	text-align: center;
+}
+
+
+
+
+footer{
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(163, 193, 211, 0.726);
+	padding: 10px;
+	padding-left: 20px;
+}
+
+footer a:visited{
+	color: rgb(62, 15, 105);
+}
+footer a:link{
+	color: black;
+}
+footer a:hover{
+	color: rgb(251, 189, 21);
+}
+
+.active{
+	background-color: rgba(0, 255, 255, 0.123);
+	
+}
+
+.resources a{
+	display: block;
+}
+.resources a:hover{
+	background-color: rgba(21, 178, 251, 0.452);
+	padding: 15px;
+	color: black;
+}
+
+table{
+	display: table;
+	margin: 50px;
+	margin-top: 30px;
+	background-color: aliceblue;
+	border-spacing: 5px;
+	width: 90%;
+	box-shadow: 5px 5px rgba(0, 0, 0, 0.507);
+	border-color: black;
+	border-collapse: collapse;
+}
+
+th, td{
+	border-top: 3px solid rgb(112, 183, 201, 0.418);
+	padding: 20px;
+	max-width: 600px;
+	
+
+}
+th{
+	font-size: 1.2em;
+	border-bottom: 5px solid rgb(112, 183, 201, 0.418);
+}
+
+#event{
+	margin-top: 25px;
+
 }
