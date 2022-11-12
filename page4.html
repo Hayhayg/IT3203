@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Evaluation</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+
+  <!--
+	This is page4.html, evaluation , for the CARIT website. The body has a 2% margin. The header is 
+	centered with the KSU logo and website title. The KSU logo links to the KSU website. The title is 
+	appropriately <h1>. The navigation bar spans across the page with a 100% width. It is an unordered 
+	list with the text centered, and the color of each link changes on hover. The footer has a relative 
+	position to keep it at the bottom of the page. This is consistent on each page. 
+
+	 In the body, there is a paragraph tag that displays the page's purpose. Following this ia form to 
+	 complete the evaluation, and it utlizes a linked Javascript page. The classes are hidden by default, 
+	 and a Javascript onclick function will display the appropriate classes by altering the display state. 
+	 Then, four classes display each with five options. All class grades must be selected, otherwise an 
+	 alert message will show. After sumbission with the button, another Javascript function will occur 
+	 to calculate the final GPA and determine whether the GPA is sufficient. If else statements are used to 
+	 achieve this, and if the GPA is over 3.2, a link will be displayed. 
+	
+  -->
+
+
+	<header>
+		<a href="https://ccse.kennesaw.edu/it/">
+		<img src="img/ksulogo.png" class="centered">
+	</a>
+		<h1 class="center">Center for Applied Research in Information Technology</h1>
+	<div class="nav">
+	<ul>
+		<li class="navBorder" id="home"> <a href="index.html">Home</a></li>
+		<li class="navBorder"> <a href="page2.html">About Us</a></li>
+		<li> <a href="page3.html">Resources</a></li>
+		<li class="active"> <a href="page4.html">Evaluation</a></li>
+
+	</ul>
+</div>
+	</header>
+	
+	
+<br>
+  <body>
+	
+	<section id="evalpara">
+		<h1 class="center">Student Assistant Applications</h1>
+		<p>CARIT has four student assistant positions open for the upcoming Spring 2023 semester. In order to be
+			considered for such a position, a student has to complete some required courses and meet the minimum
+			average grade requirement. <br>
+		To determine your eligiblity, please complete the evaluation below. Select your student status, then 
+	provide accurate grades. If the average grade requirement is met, a link will be provided to apply for the following positions. </p>
+	</section>
+
+	<form id="eval" action="">
+		
+		<h3>Student Status:</h3>
+		<input type="radio" id="html" name="fav_language" value="HTML">
+		<label for="html" onclick="undergrad()">Undergraduate</label><br>
+		<input type="radio" id="css" name="fav_language" value="CSS">
+		<label for="css" onclick="grad()">Graduate</label><br>
+		<br>
+		<div id="undergradHide">
+			<h3>Please select your grades for the following undergraduate classes to determine your eligiblity.</h3>
+			<label for="under-class1">CSE 3202 Mobile System Overview</label>
+				<select name="under-class1" id="underClass1">
+					<option value="null"></option>
+					<option value="4">A</option>
+					<option value="3">B</option>
+					<option value="2">C</option>
+					<option value="1">D</option>
+					<option value="0">F</option>
+				</select>
+				<br>
+			<label for="under-class2">IT 4213 Mobile Web Development</label>
+			<select name="under-class2" id="underClass2">
+				<option value="null"></option>
+				<option value="4">A</option>
+				<option value="3">B</option>
+				<option value="2">C</option>
+				<option value="1">D</option>
+				<option value="0">F</option>
+			</select> <br>
+			<label for="under-class3">CS 3410 Intro to Database Systems</label>
+				<select name="under-class3" id="underClass3">
+					<option value="null"></option>
+					<option value="4">A</option>
+					<option value="3">B</option>
+					<option value="2">C</option>
+					<option value="1">D</option>
+					<option value="0">F</option>
+				</select> <br>
+			<label for="under-class4">CS 3502 Operating Systems</label>
+			<select name="under-class4" id="underClass4">
+				<option value="null"></option>
+				<option value="4">A</option>
+				<option value="3">B</option>
+				<option value="2">C</option>
+				<option value="1">D</option>
+				<option value="0">F</option>
+			</select>
+			<br>
+			<button type='button' onclick="evaluateUnder()" value="Evaluate">Evaluate</button>
+
+		</div>
+
+		<div id="gradHide">
+			<h3>Please select your grades for the following graduate classes to determine your eligiblity.</h3>
+			<label for="grade-class1">IT 7113 Data Visualization</label>
+				<select name="grad-class1" id="gradClass1">
+					<option value="null"></option>
+					<option value="4">A</option>
+					<option value="3">B</option>
+					<option value="2">C</option>
+					<option value="1">D</option>
+					<option value="0">F</option>
+				</select>
+				<br>
+			<label for="grad-class2">IT 6713 Business Intelligence</label>
+			<select name="grad-class2" id="gradClass2">
+				<option value="null"></option>
+				<option value="4">A</option>
+				<option value="3">B</option>
+				<option value="2">C</option>
+				<option value="1">D</option>
+				<option value="0">F</option>
+			</select> <br>
+			<label for="grad-class3">IT 6773 Practical Data Analytics</label>
+				<select name="grad-class3" id="gradClass3">
+					<option value="null"></option>
+					<option value="4">A</option>
+					<option value="3">B</option>
+					<option value="2">C</option>
+					<option value="1">D</option>
+					<option value="0">F</option>
+				</select> <br>
+			<label for="grad-class4">IT 5433 Database: Design and Applications</label>
+			<select name="grad-class4" id="gradClass4">
+				<option value="null"></option>
+				<option value="4">A</option>
+				<option value="3">B</option>
+				<option value="2">C</option>
+				<option value="1">D</option>
+				<option value="0">F</option>
+			</select>
+			<br>
+			<button type='button' onclick="evaluateGrad()" value="Evaluate">Evaluate</button>
+
+		</div>
+		<h2 id="result"></h2>
+		<h2 id="link"><a href="#">CARIT Application</a></h2>
+	  </form>
+
+
+
+	<script src="script.js"></script>
+  </body>
+	
+  <br>
+	<footer>
+		<p>Created by Halley Gissendanner for IT 3203</p>
+		<h3>
+	Class project website: <a href="http://it5443.azurewebsites.net">http://it5443.azurewebsites.net</a>
+	</h3>	
+</footer>
+</html>

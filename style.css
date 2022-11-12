@@ -20,10 +20,10 @@ a:hover{
 
 
 
-h1 { font-family: "Dejavu Sans"; font-size: 24px; font-style: normal; font-variant: normal; font-weight: bold; line-height: 26px; } 
-h2 { font-family: "Dejavu Sans"; font-size: 20px; font-style: normal; font-variant: normal; font-weight: bold; line-height: 20px; } 
-h3 { font-family: "Dejavu Sans"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: bold; line-height: 15px; } 
-p { font-family: "Dejavu Sans"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } 
+h1 { font-family: "Dejavu Sans"; font-size: 26px; font-style: normal; font-variant: normal; font-weight: bold; line-height: 26px; } 
+h2 { font-family: "Dejavu Sans"; font-size: 22px; font-style: normal; font-variant: normal; font-weight: bold; line-height: 20px; } 
+h3 { font-family: "Dejavu Sans"; font-size: 17px; font-style: normal; font-variant: normal; font-weight: bold; line-height: 15px; } 
+p { font-family: "Dejavu Sans"; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } 
 
 .centered{
 	display: block;
@@ -56,7 +56,10 @@ header h1{
 	display: inline-block;
 	text-align: center;
 	font-weight: 400;
-	font-size: 1.1em;
+	font-size: 1.2em;
+	margin: -3px;
+	border-right: 2px solid white;
+	border-left: 2px solid white;
 
 }
 
@@ -67,10 +70,9 @@ header h1{
 
 }
 #home{
-	font-size: 1.5em;
+	
 	font-weight: 500;
-	border-right: 2px solid white;
-	border-left: 2px solid white;
+	
 	
 
 }
@@ -151,7 +153,6 @@ footer a:hover{
 
 .active{
 	background-color: rgba(0, 255, 255, 0.123);
-	
 }
 
 .resources a{
@@ -190,4 +191,39 @@ th{
 #event{
 	margin-top: 25px;
 
+}
+
+#evalpara{
+	display: block;
+	max-width: 60%;
+	margin: 0 auto;
+	background-color: white;
+	padding: 20px;
+}
+#eval{
+	padding: 25px;
+	font-size: 1.2em;
+	padding-left: 50px;
+	background-color: aliceblue;
+	margin-top: 20px;
+
+}
+
+#undergradHide{
+	line-height: 40px;
+	padding: 15px;
+	display: none;
+	outline: 2px solid grey;
+	background-color:rgba(128, 128, 128, 0.068);
+
+}
+#gradHide{
+	line-height: 40px;
+	padding: 15px;
+	display: none;
+	outline: 2px solid grey;
+	background-color:rgba(128, 128, 128, 0.068);
+}
+#link{
+	display: none;
 }
